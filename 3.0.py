@@ -1,0 +1,24 @@
+import numpy as np
+
+arr = np.array([[1,2,3],[4,2,5]])
+
+print("Array is of type:", type(arr))
+print("No of dimensions:", arr.ndim)
+print("Shape of array:", arr.shape)
+print("Size of array:", arr.size)
+print("Array stores elements of type:", arr.dtype)
+
+a = np.array([[1,2,3],[3,4,5],[4,5,6]])
+
+print(a)
+print("After Slicing")
+print(a[1:])
+
+print("Our array is:")
+print(a)
+print("The items in the second column are:")
+print(a[...,1])
+print("The items in the second row are:")
+print(a[1,...])
+print("The items from column 1 onwards are:")
+print(a[...,1:])
